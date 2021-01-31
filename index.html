@@ -22,7 +22,7 @@
        
         width: 400px;
         
-		text-align: right;
+		text-align: center;
       }
     </style>
 	
@@ -35,13 +35,15 @@
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 4,
           center: atl,
+		  
+		const atl2 = { lat: 33.748, lng: -84.39111 };
 		const map2 = new google.maps.Map(document.getElementById("map2"), {
           zoom: 4,
-          center: atl,
+          center: atl2,
         });
         // The marker, positioned at atl
         const marker = new google.maps.Marker({
-          position: atl,
+          position: atl, atl2,
           map: map,
 		  map2: map2,
         });
