@@ -33,13 +33,17 @@
         const atl = { lat: 33.748, lng: -84.39111 };
         // The map, centered at atl
 		const map2 = new google.maps.Map(document.getElementById("map2")),
-        const map = new google.maps.Map(document.getElementById("map"), 
-//		{
-//          zoom: 4,
-//          center: atl,
+		{
+          zoom: 4,
+          center: atl,
 		  
-       }
-	   );
+       }),
+        const map = new google.maps.Map(document.getElementById("map"), 
+		{
+          zoom: 4,
+          center: atl,
+		  
+       });
         
 		// The marker, positioned at atl
         const marker = new google.maps.Marker({
@@ -71,7 +75,7 @@
   </head>
   <body>
     <h3>Test Map</h3>
-    <!--The div element for the map -->
+    <!--The div elements for the map -->
     <div id="map"></div>
 	<h3>Test Map2</h3>	
 	<div id="map2"></div>
